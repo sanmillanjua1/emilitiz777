@@ -14,11 +14,15 @@ public class phraseMatic
     String[] array3 = { "to estabilize nutrient export", "to estabilize nutrient to nutrient interactions", 
       "to buffer the waters acidity", "to promote iodine estability", "to promote bacterial growth"};
     
-    int rand1 = Math.random(array1);
+    int oneLength = array1.length; 
+    int twoLength = array2.length; 
+    int threeLength = array3.length;
     
-    int rand2 = Math.random(array2);
+    double rand1 = Math.random() * oneLength;
     
-    int rand2 = Math.random(array3);
+    double rand2 = Math.random() * twoLength;
+    
+    double rand3 = Math.random() * oneLength;
     
     System.out.print( rand1 + " " + rand2 + " " + rand3);
   }
